@@ -30,9 +30,7 @@
                         <span class="input-group-btn"><button type="button" class="btn btn-primary">Go</button></span>
                     </div>
                 </form>
-                <div class="navbar-btn navbar-btn-right">
-                    <a class="btn btn-danger btn-xs update-pro" href="{{url('keluar')}}" title="Upgrade to Pro" target="_blank"><i class="lnr lnr-exit"></i> <span>Keluar</span></a>
-                </div>
+           
                 @include('layouts.admin.navbar')
             </div>
         </nav>

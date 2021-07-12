@@ -24,6 +24,6 @@
 
     <li><a href="{{route('laporan')}}" class=""><i class="lnr lnr-dice"></i> <span>Laporan</span></a></li>
 
-    <li><a href="{{url('keluar')}}" class=""><i class="lnr lnr-exit"></i> <span>Keluar</span></a></li>
+    <li><a href="{{url('keluar')}}" class=""><i class="lnr lnr-exit"></i> <span>Logout</span></a></li>
 
 </ul>

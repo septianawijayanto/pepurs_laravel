@@ -12,21 +12,24 @@
                 <b><i class="fa fa-printh"></i> Cetak Laporan</b>
             </button>
             <div class="dropdown-menu " x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 30px, 0px);">
-                <a href="{{url('admin/laporan/pdf')}}" class="dropdown-item"> Laporan Semua Transaksi</a>
-
-                <a href="{{url('admin/laporan/peminjamanpdf?status=pinjam')}}" class="dropdown-item"> Laporan Sedang Di pinjam</a>
-
-                <a href="!#" class="dropdown-item btn-priodepdf" data-toggle="modal" data-target="#modal"> Laporan Periode</a>
-
-                <a href="{{url('admin/laporan/peminjamanpdf?status=kembali')}}" class="dropdown-item"> Laporan Pengembalian</a>
-
-
+                <a href="{{url('admin/laporan/pdf')}}" class="dropdown-item"> Transaksi Semua</a>
+                <br>
+                <a href="{{url('admin/laporan/peminjamanpdf?status=pinjam')}}" class="dropdown-item"> Transaksi Dipinjam</a>
+                <br>
+                <a href="{{url('admin/laporan/peminjamanpdf?status=kembali')}}" class="dropdown-item"> Transaksi Pengembalian</a>
+                <br>
+                <a href="{{url('admin/laporan/peminjamanpdf?status=rusak')}}" class="dropdown-item">Transaksi Rusak</a>
+                <br>
+                <a href="{{url('admin/laporan/peminjamanpdf?status=hilang')}}" class="dropdown-item"> Transaksi Hilang</a>
+                <br>
+                <a href="!#" class="dropdown-item btn-priodepdf" data-toggle="modal" data-target="#modal">Transaksi Periode</a>
+                <br>
                 <a href="{{url('admin/laporan/anggotapdf')}}" class="dropdown-item"> Laporan Anggota</a>
-
+                <br>
                 <a href="{{url('admin/laporan/bukupdf')}}" class="dropdown-item"> Laporan Buku</a>
-
             </div>
         </div>
+
     </div>
     <div class="panel-body">
         <div class="table-responsive">
