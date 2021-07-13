@@ -165,7 +165,7 @@ class BukuController extends Controller
             $data['cover'] = $file->getClientOriginalName();
         }
         Buku::where('id', $id)->update($data);
-        return redirect('admin/buku')->with('sukses', 'Buku Berhasil Diedit');
+        return redirect('admin/buku')->with('sukses', 'Data Buku Berhasil Diedit');
     }
     public function export()
     {

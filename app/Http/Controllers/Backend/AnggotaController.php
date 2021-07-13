@@ -76,7 +76,7 @@ class AnggotaController extends Controller
 
         Anggota::create($data);
 
-        return redirect()->back()->with('sukses', 'Data Siswa Berhasil di Tambah');
+        return redirect()->back()->with('sukses', 'Data Anggota Berhasil di Tambah');
     }
     public function delete($id)
     {
@@ -129,7 +129,7 @@ class AnggotaController extends Controller
         $data['updated_at'] = date('Y-m-d H:i:s', strtotime(Carbon::today()->toDateString()));
 
         Anggota::where('id', $id)->update($data);
-        return redirect('admin/anggota')->with('sukses', 'Anggota Berhasil Diedit');
+        return redirect('admin/anggota')->with('sukses', 'Data Anggota Berhasil Diedit');
     }
     public function cetak($id)
     {

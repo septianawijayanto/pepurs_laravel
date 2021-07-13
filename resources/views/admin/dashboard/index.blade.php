@@ -15,7 +15,7 @@
                     <span style="background-color: blue;" class="icon"><i class="fa fa-users"></i></span>
                     <p>
                         <span class="number">{{$as}}</span>
-                        <span class="title">Anggota</span>
+                        <span class="title">Anggota Siswa</span>
                     </p>
                 </div>
             </div>
@@ -24,7 +24,7 @@
                     <span style="background-color: pink;" class="icon"><i class="fa fa-users"></i></span>
                     <p>
                         <span class="number">{{$ag}}</span>
-                        <span class="title">Anggota</span>
+                        <span class="title">Anggota Guru</span>
                     </p>
                 </div>
             </div>
@@ -33,7 +33,7 @@
                     <span style="background-color: red;" class="icon"><i class="fa fa-user"></i></span>
                     <p>
                         <span class="number">{{$ast}}</span>
-                        <span class="title">Anggota</span>
+                        <span class="title">Anggota Staf</span>
                     </p>
                 </div>
             </div>

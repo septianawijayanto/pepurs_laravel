@@ -36,14 +36,14 @@ class AdminController extends Controller
             'username' => $request->username,
             'password' => bcrypt($request->password),
         ]);
-        return redirect()->back()->with('sukses', 'Data  Berhasil di Tambah');
+        return redirect()->back()->with('sukses', 'Data Admin Berhasil di Tambah');
     }
     public function delete($id)
     {
         try {
             $data = Admin::find($id);
             $data->delete();
-            return \redirect()->back()->with('sukses', 'Data Anggota Berhasil Dihapus');
+            return \redirect()->back()->with('sukses', 'Data Admin Berhasil Dihapus');
         } catch (\throwable $th) {
             return \redirect()->back()->with('Gagal', 'Gagal Data Berelasi DiTabel Lain');
         }
@@ -74,6 +74,6 @@ class AdminController extends Controller
         $data['updated_at'] = date('Y-m-d H:i:s', strtotime(Carbon::today()->toDateString()));
 
         Admin::where('id', $id)->update($data);
-        return redirect('admin/admin')->with('sukses', 'Data Berhasil Diedit');
+        return redirect('admin/admin')->with('sukses', 'Data Admin Berhasil Diedit');
     }
 }

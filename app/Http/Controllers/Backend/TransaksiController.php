@@ -127,6 +127,6 @@ class TransaksiController extends Controller
     {
         $data = Transaksi::find($id);
         Transaksi::where('id', $id)->update(['tgl_kembali' => Date('Y-m-d', strtotime(Carbon::today()->addDay(7)->toDateString())),]);
-        return redirect()->back()->with('sukses', 'Berhasil Di perpanjang');
+        return redirect()->back()->with('sukses', 'Transaksi Berhasil Di perpanjang');
     }
 }
