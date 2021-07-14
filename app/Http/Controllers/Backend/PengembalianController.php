@@ -77,7 +77,7 @@ class PengembalianController extends Controller
                     'updated_at' => date('Y-m-d', strtotime(Carbon::today()->toDateString())),
                 ],);
             }
-            return redirect()->back()->with('sukses', 'Buku Dikembalikan');
+            return redirect()->back()->with('sukses', 'Buku Berhasil dikembalikan Dikembalikan');
         } else {
             Transaksi::where('id', $id)->update([
                 'status' => 'kembali',
@@ -85,7 +85,7 @@ class PengembalianController extends Controller
 
                 'updated_at' => date('Y-m-d', strtotime(Carbon::today()->toDateString())),
             ],);
-            return redirect()->back()->with('sukses', 'Buku Dikembalikan');
+            return redirect()->back()->with('sukses', 'Buku Berhasil Dikembalikan');
         }
     }
     public function rusak(Request $request, $id)
