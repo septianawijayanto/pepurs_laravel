@@ -35,7 +35,6 @@
                     </tr>
                     @endforeach
                 </tbody>
-                </body>
             </table>
             <!-- End Tabel -->
         </div>

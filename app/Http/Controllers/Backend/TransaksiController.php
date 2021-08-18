@@ -46,7 +46,7 @@ class TransaksiController extends Controller
     public function create(Request $request)
     {
         $cek = Transaksi::where('status', 'pinjam')->where('anggota_id', $request->get('anggota_id'))->count();
-        if ($cek < 3) {
+        if ($cek < 2) {
             if (Transaksi::where('anggota_id', $request->get('anggota_id'))->where('buku_id', $request->get('buku_id'))->where('status', 'pinjam')->exists()) {
                 return redirect()->back()->with('gagal', 'Buku Telah dipinjam');
             } else {
